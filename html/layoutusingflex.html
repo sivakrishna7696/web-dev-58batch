@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using flex  In HTML</title>
+		<link rel="stylesheet" href="externalcss.css" />
+		<style>
+			div{
+				padding: 10px;
+				border: 2px solid red;
+				margin-bottom: 10px;
+			}
+
+			.parentdiv{
+				display: flex;
+			}
+
+			.parentdiv div{
+				flex: 1;
+				background-color: lawngreen;
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+			<div class="parentdiv"> 
+				
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+
+			</div>
+		
+
+	</body>
+</html>
