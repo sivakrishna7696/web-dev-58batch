@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attribute Selectors In CSS</title>
+		<link rel="stylesheet" href="externalcss.css" />
+		<style>
+			[src]{
+				border: 2px solid gold;
+				padding: 10px;
+			}
+
+			/*has Attr*/
+			[class]{
+				border: 2px solid red;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+
+			/*Attr value equals to */
+			[ type="text" ]{
+				background-color:lemonchiffon ;
+			}
+
+			/*Attr value starts with*/
+			[alt ^="htm"]{
+					height: 300px;
+			}
+
+			/*Attr ends with*/
+
+			[alt $= "image"]{
+				border-radius: 100px;
+			}
+
+			[href *= 'ceb']{
+				font-size: 25px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+			<!-- 
+				Attribute Selectors
+					- has Attribute [src]
+					- Attr value equal to [ type="text"  ]
+					- Attr value starts with [alt ^="htm" ]
+					- Attr value ends  [alt $= "image"]
+					- Attr value contains [href *= 'ceb']
+			 -->
+
+			<section class="sectiontag">
+				<img src="../images/css.png" alt="css-image" />
+			</section>
+			<div>
+				<label>Name</label>
+				<input type="text" placeholder="Enter your name"  />
+			</div>
+
+			<img src="../images/html51.png" alt="html5" /> 
+
+
+			<a href="https://facebook.com/"><p>This is para</p></a>
+	</body>
+</html>

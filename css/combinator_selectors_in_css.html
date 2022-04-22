@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combinator Selectors In CSS</title>
+		<link rel="stylesheet" href="externalcss.css" />
+		<style>
+			/*grouping selector*/
+			h2,p,article{
+				font-family: monospace;
+			}
+
+			.descsection h2{
+				background-color: yellow;
+				padding: 10px;
+				color: red;
+			}
+
+			article > p{
+				background-color: lightblue;
+				padding: 10px;
+				border: 2px solid orange;
+				color: green;
+				font-size: 20px;
+			}
+
+			h3 + div{
+				border: 2px solid green;
+				padding: 10px;
+				background-color: lawngreen;
+			}
+
+			.gensibsel ~ p{
+				background-color: violet;
+				padding: 15px;
+
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+				
+		<!-- 
+			Combinator Selector 
+				- descendant selector(space)
+				- child Selector(>)
+				- Adjacent Sibling Selector(+)
+				- general sibling Selector(~)
+		 -->
+
+		 <!-- descendent selector -->
+		 <section class="descsection">
+		 		<h2>This is Descendent Selector</h2>
+		 		<p>This is Descendent Selector</p>
+		 		<div>
+		 			<h2>This is nested Descendent Selector</h2>
+		 		</div>
+		 </section>
+		 <hr />
+
+		 <!-- child selector -->
+		 	<article>
+		 		<p>This is child Selector</p>
+		 		<span>This is article span tag</span>
+			 		<div>
+			 			<p>This is nested child selector</p>
+			 		</div>
+			 	<p>This is child selector</p>	
+		 	</article>
+			<hr />
+
+		 	<!-- adjacent sibling selector -->
+
+		 	<h3>This is adjacent sibling selector</h3>
+		 	<div>This is adjacent sibling div</div>
+		 	<h3>This is adjacent sibing</h3>
+		 	<p>this is adjacent para</p>
+		 	<div>this is adjacent sibling</div>
+
+		 	<!-- general sibling selector -->
+
+		 		<div class='gensibsel'>This is General Sibling Selector</div>
+		 		<p>This is General Sibling Selector</p>
+		 		<article>This is General Sibling Selector</article>
+		 		<p>This is General Sibling Selector</p>
+		 		<div>This is General Sibling Selector</div>
+		 		<p>This is General Sibling Selector</p>
+
+	</body>
+</html>
