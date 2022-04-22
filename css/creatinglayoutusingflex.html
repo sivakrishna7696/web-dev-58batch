@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using flex</title>
+		<style>
+			.parentdiv{
+				height: 400px;
+				border: 1px solid red;
+				margin-top: 10px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				/*flex-flow:row wrap ;*/
+				justify-content: center;
+				align-items: center;
+				/*align-content: space-between;*/
+
+			}		
+
+			.divchild{
+				border: 2px solid red;
+				padding: 10px;
+				background-color: lightblue;
+				height: 100px;
+				width: 100px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+
+			}
+
+			.div1{
+				/*flex: 1;*/
+				/*order: 3;*/
+				/*flex-grow: 2;*/
+				/*width: 200px;
+				flex-shrink: 0;*/
+				align-self: flex-end;
+			}
+
+			.div2{
+				/*flex: 4;*/
+				/*order: 1;*/
+				/*flex-grow: 5;*/
+				align-self: center;
+			}
+
+			.div3{
+				/*flex: 1;*/
+				/*order: 2;*/
+				/*flex-grow: 4;*/
+				align-self: flex-start;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>creating layout using flex</h2>	
+			<!-- 
+				flex properties
+					- container properties
+							- flex-direction
+								- row/column/row-reverse,column-reverse
+
+							- flex-wrap
+								- wrap/no-wrap/wrap-reverse
+
+							- flex-flow(combination of both flex direction and flex wrap)
+
+							- justify-content(center/flex-start/flex-end/space-around/space-between/space-evenly)
+							- align-items
+							
+
+
+					- item properties
+						- flex
+						- order
+						- flex-grow
+						- flex-shrink
+						- align-self
+			 -->
+		
+
+			<section class="parentdiv"> 
+				<div class="div1 divchild">div1</div>
+				<div class="div2 divchild">div2</div>
+				<div class="div3 divchild">div3</div>
+				
+				
+			</section>
+	</body>
+</html>
