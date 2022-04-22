@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Positions in CSS</title>
+		<style type="text/css">
+			
+			body{
+				height: 1440px;
+			}
+
+			h2{
+				text-align: center;
+				color: blue;
+			}
+			.positionclass{
+				margin-bottom: 15px;
+			}
+
+			.relativeclass{
+				height: 100px;
+				background-color: red;
+				width: 100px;
+				position: relative;
+				top: 50px;
+				left: 100px;
+			}
+
+			.absoluteclass{
+				height: 100px;
+				background-color: yellow;
+				width: 100px;
+				position: absolute;
+				top: 100px;
+			}
+
+			.fixedclass{
+				height: 100px;
+				background-color: green;
+				width: 100px;
+				position: fixed;
+			}
+
+			.stickyclass{
+				position: sticky;
+				top: 100px;
+				right: 0px;
+				height: 100px;
+				background-color: palegreen;
+				width: 100px;
+				float: right;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<h2>Positions in CSS</h2>
+			<!-- 
+				types of positions
+					- static
+					- relative
+					- absolute
+					- fixed
+					- sticky
+			 -->
+
+			 <section class="relativeclass positionclass">Relative Position</section>
+			 <div style="position:relative">
+			  <section class="absoluteclass positionclass">Absolute Position</section>
+			</div>
+			  <section class="fixedclass positionclass">fixed</section>
+			  <div class="stickyclass">sticky</div>
+	</body>
+</html>
