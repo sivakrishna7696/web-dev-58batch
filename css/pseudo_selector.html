@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pseudo Selectors in CSS</title>
+		<style>
+			
+				ol li:first-child{
+					background-color: red;
+					border-radius: 100px;
+					padding: 10px;
+					margin-bottom: 10px;
+				}
+
+				ol li:last-child{
+					background-color: orange;
+					border-radius: 100px;
+					padding: 10px;
+					margin-bottom: 10px;
+				}
+
+				ol li:nth-child(4){
+					background-color: green;
+					border-radius: 100px;
+					padding: 10px;
+					margin-bottom: 10px;
+				}
+
+				ol li:nth-child(odd){
+					background-color: violet;
+					border-radius: 100px;
+					padding: 10px;
+					margin-bottom: 10px;
+				}
+
+				ol li:hover{
+					background-color: skyblue;
+					height: 50px;
+
+				}
+
+				/*a:link{
+					background-color: green;
+					color: blue;
+				}*/
+				a:active{
+					color: brown;
+				}
+				a:visited{
+					color: orange;
+				}
+
+				input:focus{
+					background-color:yellow ;
+				}
+
+				div:hover{
+					font-size: 20px;
+					background-color: lawngreen;
+					padding: 10px;
+				}
+
+				/*pseudo element selector*/
+
+				article::first-line{
+					color: fuchsia;
+					font-size: 20px;
+				}
+
+				article::first-letter{
+					color: red;
+					font-size: 30px;
+				}
+
+				article::selection{
+					background-color: red;
+				}
+
+				article::before{
+					content: "****";
+				}
+
+				article::after{
+					content: "thank you";
+					background-color: green;
+				}
+
+		</style>
+	</head>
+
+	<body>
+			
+		<!-- 
+			Pseudo Selectors
+				pseudo Selector allow developer to style as per their "state" inside DOM.
+			Pseudo Selector classified into two categories
+				- Pseudo Class Selector (selector : state of an element)
+				- anchor tag has for states interanally such as
+					a:link,a:hover,a:active,a:focus,a:visited
+
+				- Pseudo Element Selector (Selector :: state of the element)
+
+				
+		 -->
+
+		 <div>This is Pseudo Selector</div>
+		 	<ol>
+		 		<li>Bangalore</li>
+		 		<li>chennai</li>
+		 		<li>pune</li>
+		 		<li>Mumbai</li>
+		 		<li>Hyderabad</li>
+		 		<li>Mysore</li>
+		 	</ol>
+
+		 	<a class="anc" href="#">click here</a>
+
+		 	<input type="text" name="" />
+
+		 	<a href="https://en.wikipedia.org/wiki/Coffee">facebook</a>
+
+		 		<!-- pseudo Element Selectors -->
+		 	<article>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</article>
+
+	</body>
+</html>
