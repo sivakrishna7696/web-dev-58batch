@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transform Property - CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			div{
+				border: 1px solid blueviolet;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+
+			/*translate*/
+			div:first-child:hover{
+				background-color: lightgreen;
+				transform: translate(10px,10px);
+			}
+
+			/*scale*/
+			div:nth-child(2):hover{
+				background-color: yellow;
+				transform: scale(1.2,1.4);
+			}
+
+			/*skew*/
+		/*	div:nth-child(3){
+				background-color: tomato;
+				transform: skew(2deg,2deg);
+			}*/
+
+
+			/*rotate*/
+			div:nth-child(4){
+				position: absolute;
+				right: 0px;
+				width: 100px;
+				background-color: orange;
+				transform: rotate(90deg);
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+
+			<!--
+			 	Transform Properties
+					- transform	
+					- scale
+					- skew
+					- rotate
+			  -->
+
+		<h2>Transform Property - CSS</h2>
+		<section>
+			<div>HTML</div>
+			<div>CSS</div>
+			<div>JAVASCRIPT</div>
+			<div>REACTJS</div>
+		</section>
+	</body>
+</html>

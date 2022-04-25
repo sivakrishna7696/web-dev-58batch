@@ -1,0 +1,8 @@
+Animations
+	- transform
+	- transition
+	- animation
+
+	why we need animations
+		- to attract the users.
+		- to improve the user attention.

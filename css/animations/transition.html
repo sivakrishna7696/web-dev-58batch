@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition Property - CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			div{
+				border: 10px dashed gold;
+				border-style: dashed;
+				border-width: 10px;
+				border-color: red;
+				padding: 20px;
+				transition-property: border,background-color,border-style,border-width;
+				transition-delay: 2s,3s;
+				transition-duration: 5s,10s;
+				transition-timing-function: linear;
+			}
+
+			div:hover{
+				/*border: 10px solid gold;*/
+				border-style: solid;
+				background-color: blue;
+				border-width:1px ;
+				}
+				/*
+					chrome/safari/firefox
+					--webkit-transition-property: border,background-color,border-style,border-width;
+					--webkit-transition-delay: 2s,3s;
+					--webkit-transition-duration: 5s,10s;
+					--webkit-transition-timing-function: linear;
+
+					opera
+					--o-transition-property: border,background-color,border-style,border-width;
+					--o-transition-delay: 2s,3s;
+					--o-transition-duration: 5s,10s;
+					--o-transition-timing-function: linear;
+
+					edge,IE
+					--ms-transition-property: border,background-color,border-style,border-width;
+					--ms-transition-delay: 2s,3s;
+					--ms-transition-duration: 5s,10s;
+					--ms-transition-timing-function: linear;
+				*/
+			}
+
+
+			
+		</style>
+
+	</head>
+
+	<body>
+
+			<!--
+			 	transition Properties
+				
+			  -->
+
+		<h2>Transition Property - CSS</h2>
+	</body>
+</html>
