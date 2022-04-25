@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MediaQueries</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style type="text/css">
+			.mediacss{
+				font-size: 24px;
+				background-color: red;
+				padding: 20px;
+				color: white;
+				margin-bottom: 30px;
+			}
+
+			.parentsection{
+				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: center;
+					align-items: center;
+			}
+
+			.parentsection > div {
+				width: 34%;
+				margin: 10px;
+			}
+
+			.parentsection > div >img {
+				width: 100%;
+			}
+
+
+			/*media Queries*/
+			/*smaller devices*/
+			@media only screen and (max-width: 600px) {
+				.mediacss{
+					font-size: 20px;
+					background-color: green;
+				}
+
+				.parentsection{
+					justify-content: center;
+					align-items: center;
+				}
+
+				.parentsection > div {
+				width: 50%;
+				margin: 10px;
+				border: 2px solid saddlebrown;
+			}
+
+			}
+
+			/*tablets */
+			@media only screen and (min-width: 600px) and (max-width: 768px) {
+				.mediacss{
+					font-size: 20px;
+					background-color: blue;
+					float: right;
+				}
+
+				.parentsection{
+					justify-content: center;
+					align-items: center;
+				}
+
+			.parentsection > div {
+				width: 50%;
+				margin: 10px;
+			}
+
+			.parentsection{
+				display: flex;
+				/*flex-wrap: wrap;*/
+			}
+			
+			}
+
+
+			/*deskops, large devices*/
+			@media only screen and (min-width: 768px) and (max-width: 992px){
+
+			}
+
+			/*extra large devices*/
+			@media only screen and (min-width: 992px){
+
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mediacss">This is Media Queries <i style="color: blue; font-size: 35px;" class="fa-solid fa-camera"></i></div>
+		<section class="parentsection">
+			<div>
+				<img src="../../images/apjsir.jpg" alt="apjsir" />
+			</div>
+			<div>
+				<img src="../../images/apjsir.jpg" alt="apjsir" />
+			</div>
+			<div>
+				<img src="../../images/apjsir.jpg" alt="apjsir" />
+			</div>
+		</section>
+	</body>
+</html>
