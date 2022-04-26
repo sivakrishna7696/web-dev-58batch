@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions - Js</title>
+  </head>
+  <body>
+    <script>
+      /*
+            conditions - to take decisions
+                - if condition
+                - ifelse
+                - ifelse if
+                - switch
+            
+            Types - 
+                1) if(cond){
+                    statement(s);
+                }
+
+                2)if(cond){
+                    statement(s);
+                }else{
+                    statement(s);
+                }
+
+                3)if(cond){
+                    statement(s);
+                }elseif(cond){
+                    statement(s);
+                }elseif(cond){
+                    statement(s)
+                }else{
+                    statement(s);
+                }
+
+                4)switch(option){
+                    case 1 : statement(s);
+                            break;
+                    case 2 : statement(s);
+                            break;
+                    case 3 : statement(s);
+                            break;
+                    case 4 : statement(s);
+                            break;
+                    case 5 : statement(s);
+                            break;
+                    default: statement(s);
+                            break;
+                }
+
+
+        */
+      let isClassThere = "yes";
+      if (isClassThere === "yes") {
+        console.log("Hi Guys, we have a class today");
+      } else {
+        console.log("you have holiday today");
+      }
+
+      //elseif
+      let age = 25;
+
+      if (age < 17) {
+        console.log("you are not eligible to vote");
+      } else if (age > 17 && age <= 30) {
+        console.log("you are eligible to vote");
+      } else if (age > 30 && age <= 50) {
+        console.log("you are  eligible for pension");
+      } else {
+        console.log("enter a valid number");
+      }
+
+      // switch statements
+      let today = new Date();
+      let day_number = today.getDay();
+      // alert(name_of_the_day);
+
+      switch (day_number) {
+        case 0:
+          alert("today is sunday,funday-worrying day");
+          break;
+        case 1:
+          alert("today is Monday,again start");
+          break;
+        case 2:
+          alert("today is tuesday,also boring day");
+          break;
+        case 3:
+          alert("today is wednesday,waiting for weekend");
+          break;
+        case 4:
+          alert("today is thursday,panning day for wekend");
+          break;
+        case 5:
+          alert("today is friday,tommorrow is a holiday");
+          break;
+        case 6:
+          alert("today is saturday,party day");
+          break;
+        default:
+              alert("not a valid input");
+                break;
+      }
+    </script>
+  </body>
+</html>
