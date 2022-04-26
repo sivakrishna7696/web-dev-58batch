@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        String - sequence of characters
+
+        string Methods
+            - properties
+                - length
+            - Methods
+                - charAt()
+                - CharCodeAt()
+                - indexOf()
+                - lastIndexOf()
+                - replace()
+                - replaceAll()
+                - substring()
+                - concat()
+                - tolowerCase()
+                - toUpperCase()
+                - trim()
+                - include()
+                - search()
+                - slice()
+                - split()
+        */
+
+        let CourseName = "MERN stack";
+        let courseduration = '10 days';
+
+        console.log(CourseName.length);
+        console.log(CourseName.charAt(3));
+        console.log(CourseName.charCodeAt(3));
+        console.log(CourseName.indexOf('N'));
+        console.log(CourseName.replace('E','a'))
+        console.log(CourseName.concat(courseduration));
+
+        let studentname = "welcome dhoni sir";
+        // console.log(studentname.trim());
+
+        console.log(studentname.search('sir'));
+
+        let message = "welcome to Strings";
+        // let newmessage= (message.split(" "));
+
+        console.log(message.slice(0,4))
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
