@@ -11,11 +11,13 @@ Languages are classified into two types
 Javascript uses interpreters.
     interpreters interprets, compiler complies the code.
 
-// strict coupled
 
-    int a = "ganesh";
-    char name = "virat";
-
- //javascript loosely coupled 
-
-        var a = "bangalore";
+Identifiers - An identifier is a sequence of characters in the code that Identifiers
+            a variable, function or a property.
+    
+    Rules while creating Identifiers
+        1) It should not be a reserved word.
+        2) it should not start with a number.
+        3) it should not contain any special character other than underscore(_)
+            and dollar($).
+        4) Javascript variable names are case-sensitive.
