@@ -8,3 +8,12 @@
 8) Array and array methods?
 9) Operators,loops
 10) var, let and const
+
+ES6
+    - let var,const
+    - template literals
+    - destructuring
+    - arrow Functions
+    - scoping
+    - hoisting
+    - promises
