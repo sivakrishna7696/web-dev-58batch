@@ -36,7 +36,7 @@
         */
 
         //without parameters
-        function alertfunction(name){
+        function alertfunction(){
             // alert("hello we are executing functions");
         }
         alertfunction();
@@ -56,10 +56,14 @@
         let finalAmount =  gstCalculation(amount,gstpercent);
         let newfinalAmount =  gstCalculation(amount,gstpercent);
         
-
-
         console.log(finalAmount);
         console.log(newfinalAmount);
+
+
+        // selfinvoking function
+        (function(){
+                document.write('<h2>I am self invoking function</h2>');
+            })();
 
 
 
