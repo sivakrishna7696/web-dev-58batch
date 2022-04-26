@@ -1,0 +1,21 @@
+HTML - Design the page.
+CSS - styling the page.
+
+Javascript - user interaction.
+
+Languages are classified into two types
+    - Scripting Languages
+    - Programming Languages
+
+
+Javascript uses interpreters.
+    interpreters interprets, compiler complies the code.
+
+// strict coupled
+
+    int a = "ganesh";
+    char name = "virat";
+
+ //javascript loosely coupled 
+
+        var a = "bangalore";

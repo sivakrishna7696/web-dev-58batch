@@ -1,0 +1,10 @@
+1) what is Javascript?
+2) Javascript versions?
+3) DataTypes in Js?
+4) Variables and Assignments?
+5) Objects and arrays?
+6) Functions and types?
+7) Strings and string Methods?
+8) Array and array methods?
+9) Operators,loops
+10) var, let and const

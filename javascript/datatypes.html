@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* 
+        Datatypes - which determines the nature of the data to store into identifiers.
+         types of datatypes
+
+            Number(int,float,double,long)
+            String(char) - Group of characters.
+            Boolean - Either True or False.
+            undefined - an idenifier without assignment
+            null
+            object
+            symbol
+        */
+
+        // number
+        var aadhar_number = 2340953059;
+        console.log(aadhar_number);
+        console.log(typeof aadhar_number);
+
+        //constructor method
+        var contactNumber = new Number(9865869485);
+        console.log(typeof contactNumber);
+
+        //string
+        var firstname = "virat";
+        console.log(firstname);
+        console.log(typeof firstname);
+
+        //constructor way
+        var course_name = new String("Reactjs Development");
+        console.log(course_name);
+        console.log(typeof course_name)
+
+        //Example for boolean
+            var age = 17;
+            var isEligible;
+
+            (age>17)? isEligible = true : isEligible = false;
+            // console.log(typeof isEligible);
+            if(isEligible){
+                // alert('He is eligible to cast vote');
+            }else{
+                // alert('He is not eleigible to cast a vote');
+            }
+
+            // undefined
+            var CourseDuration;
+            console.log(CourseDuration);
+
+
+            //null
+            var Student_marks = null;
+            console.log(Student_marks)
+            Student_marks = 100;
+            console.log(Student_marks)
+
+            //object
+            var student_details = {
+                studentid:1,
+                studentname:"ishan",
+                studentcontact:2390473
+            }
+        
+            console.log(student_details)
+
+            // NaN - A NaN results when we try to perform an operation on a 
+            //         number with a non-numeric value.
+    </script>
+</body>
+</html>
