@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>  
+    <h2>Functions</h2>
+
+    <script>
+
+        /*
+            Functions - it is a group of statements that perform a specfic task.
+            
+            - Functions are the heart and soul of all the programming languages.
+
+            -  one function one task, don't overload the function with multiple tasks.
+
+            Multiple ways that we can create a function in js
+                - function without parameter
+                - function with parameter
+                - function with default parameter
+                - function with return statement
+                - variable function
+                - Named function
+                - Anonymous funtion
+                - Nested function
+                - callback function
+                - selfinvoking function(IIFA- immediate invocation function anotation)
+
+
+                - procedure oriented programming completely relay on functions,whereas
+                object oriented programming relay on classes.
+        */
+
+        //without parameters
+        function alertfunction(name){
+            // alert("hello we are executing functions");
+        }
+        alertfunction();
+
+        // withparameters
+        
+        let amount = prompt('Please enter Amount');
+        let gstpercent = 10;
+
+        function gstCalculation(amount,gstpercent=15){
+            let total = parseInt(amount)+(parseInt(amount)*gstpercent/100);
+            
+            return total;
+        }
+
+    //    console.log(gstCalculation(amount,gstpercent));
+        let finalAmount =  gstCalculation(amount,gstpercent);
+        let newfinalAmount =  gstCalculation(amount,gstpercent);
+        
+
+
+        console.log(finalAmount);
+        console.log(newfinalAmount);
+
+
+
+
+    </script>
+</body>
+</html>
