@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating Dynamic HTML</title>
+    <style>
+        section{
+            display: flex;
+        }
+        section figure{
+            flex: 1;
+            margin: 0 10px;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        section figure img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="result_approach_1"></section>
+    <section id="result_approach_2"></section>
+
+   <!-- static HTML -->
+        <!-- <section>
+            <figure>
+                <img src="../images/mac.jpg"  alt="macBook" />
+                <figcaption>Mac Book</figcaption>
+                <figcaption>40000</figcaption>
+                <figcaption>35000</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/mac.jpg"  alt="macBook" />
+                <figcaption>Mac Book</figcaption>
+                <figcaption>40000</figcaption>
+                <figcaption>35000</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/mac.jpg"  alt="macBook" />
+                <figcaption>Mac Book</figcaption>
+                <figcaption>40000</figcaption>
+                <figcaption>35000</figcaption>
+            </figure>
+        </section> -->
+    <script>
+        
+        /*
+        DOM - Document Object Model
+
+         DOM selectors
+            - getElementById()
+            - getElementsByClassName()
+            - getElementsByTagName()
+            - querySelector()
+            - querySelectorAll()
+
+        DOM creators
+            - createElement()
+            - removeElement()
+            - setAttribute()
+            - removeAttribute()
+            - appendChild()
+        */
+
+        let products = [
+            {
+                name : 'Mac Book',
+                imgName : 'mac.jpg',
+                oldPrice : '40000',
+                newPrice : '35000',
+            },
+            {
+                name : 'Mac Book',
+                imgName : 'css.png',
+                oldPrice : '40000',
+                newPrice : '35000',
+            },
+            {
+                name : 'Mac Book',
+                imgName : 'html51.png',
+                oldPrice : '40000',
+                newPrice : '35000',
+            },
+            {
+                name : 'Mac Book',
+                imgName : 'mac.jpg',
+                oldPrice : '40000',
+                newPrice : '35000',
+            },
+            {
+                name : 'Mac Book',
+                imgName : 'nature.jpg',
+                oldPrice : '40000',
+                newPrice : '35000',
+            }
+        ]
+
+        // generating HTML using JS
+        // approach 1 
+        // let cards = '<section>';
+        //         for(let i=0;i<products.length;i++){
+        //            cards += '<figure>';
+        //             cards += '<img src="../images/'+ products[i].imgName+'">';
+        //             cards +=  '<figcaption>'+products[i].name+'</figcaption>'
+        //             cards +=  '<figcaption>'+products[i].oldPrice+'</figcaption>'
+        //             cards +=   '<figcaption>'+products[i].newPrice+'</figcaption>'
+        //             cards += '</figure>'
+        //         }
+        //     cards += '</section>'
+        
+        //   document.getElementById('result_approach_1').innerHTML = cards;
+
+
+             // approach 2
+             let cards_new = '<section>';
+                for(let i = 0;i<products.length;i++){
+                   cards_new += `
+                   <figure>
+                        <img src="../images/${products[i].imgName}"  alt="macBook" />
+                        <figcaption>${products[i].name}</figcaption>
+                        <figcaption>${products[i].oldPrice}</figcaption>
+                        <figcaption>${products[i].newPrice}</figcaption>
+                    </figure>
+                   `;
+                }
+
+                cards_new += '</section>';
+                document.getElementById("result_approach_2").innerHTML = cards_new;
+    </script>
+</body>
+</html>

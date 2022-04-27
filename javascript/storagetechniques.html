@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage techniques</title>
+</head>
+<body>
+    
+        <script>
+            /* 
+                storage techniques
+                    - string
+                    - array
+                    - object
+                    - array of object
+            */
+
+            //example for string
+                let course_name = 'Reactjs Devepment';
+
+            // example of array
+                let courses = ['Reactjs','Angular','vuejs'];
+                console.log(courses[2]);
+
+            //Example of object
+            let studentdetails = {
+                name : 'harsha',
+                mode : 'online',
+                email : "harsha@gmail.com",
+                phonenumber : 09849024844,
+            }
+
+            console.log(studentdetails.email);
+
+            // array of objects
+                let all_students_details =[
+                    {
+                        name : 'harsha',
+                        mode : 'online',
+                        email : "harsha@gmail.com",
+                        phonenumber : 09849024844, 
+                    },
+                    {
+                        name : 'mani',
+                        mode : 'online',
+                        email : "mani@gmail.com",
+                        phonenumber : 09849024844, 
+                    },
+                    {
+                        name : 'harsha',
+                        mode : 'online',
+                        email : "harsha@gmail.com",
+                        phonenumber : 09849024844, 
+                    },
+                    {
+                        name : 'harsha',
+                        mode : 'online',
+                        email : "harsha@gmail.com",
+                        phonenumber : 09849024844, 
+                    },
+            ]
+            console.log(all_students_details[1].email)
+        </script>
+</body>
+</html>
