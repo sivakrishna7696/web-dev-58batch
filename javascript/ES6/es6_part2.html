@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <!-- 
+        arrow function
+        
+    -->
+    <script>
+        // let caluclateSum = function(a,b){
+        //     console.log(a+b);
+        // }
+        // caluclateSum(20,30);
+
+        // Arrow function
+            const caluclateSum = (a,b) =>{
+                // console.log(a+b);
+            }
+            caluclateSum(20,30);
+
+
+        // Destructuring 
+        // array destructuring
+        let arr = [10,20,23,45,65,73];
+        let  [firstNum,SecondNum,thirdNum] = arr;
+        console.log(firstNum,SecondNum,thirdNum);
+
+        // object destructuring
+        let obj = {
+            firstName :'Mr',
+            secondName : 'john',
+            address :{
+                streetName : '267 B block',
+                location : 'bangalore',
+                locations :{
+                    longitude : 'xxxxxxxx',
+                    latitude : 'xxxxxxx'
+                }  
+            }
+        }
+
+        console.log(obj.address.location);
+
+        const {address:{locations}} = obj;
+        console.log(locations)
+
+    </script>
+
+
+</body>
+</html>
