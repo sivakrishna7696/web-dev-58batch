@@ -49,6 +49,40 @@
         const {address:{locations}} = obj;
         console.log(locations)
 
+
+        //spread and rest operator
+            let arr1 = [20,14,25,36,84];
+            // console.log(...arr1);
+            let arr2 = [...arr1,40,50,60];
+            console.log(arr2);
+
+
+            // obj spread operator
+            let obj1 ={
+                name : 'michel',
+                email : 'michel@gmail.com'
+            }
+
+            let obj2 = {
+                ...obj1,
+                phone:3343343,
+                address:'bangalore'
+            }
+
+            console.log(obj2);
+
+            //rest operator
+            function totalSum(value1,value2,...allvalue){
+                console.log(allvalue);
+            }
+            totalSum(10,20,30,40,60,50,80,55);
+
+            let message = `<div>
+                            <p>This is para</p>
+                            </div>`;
+            console.log(message);
+
+            document.write(message);
     </script>
 
 
